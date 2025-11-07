@@ -169,6 +169,7 @@ h4 {
     flex-shrink: 0;
     justify-content: space-evenly;
     padding: 60px;
+    overflow: scroll;
 }
 .menu img {
     height: 100px;
