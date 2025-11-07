@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background: black;
+    color: aliceblue;
+}
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    background: rgb(177, 176, 176);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0vh 4vw;
+}
+.restaurant-logo img{
+    height:10vh;
+    width: 10vw;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 3vw;
+}
+.content a {
+    gap: 20vw;
+    text-decoration: none;
+    color: beige;
+    justify-content: space-evenly ;
+    transition: transform 0.3s;
+}
+.content a:hover {
+    transform: scale(1.4);
+}
+.hero-image img {
+    height: calc(100vh - 10vh);
+    width: 100vw;
+}
+.details {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+}
+h1 {
+    color: rgb(6, 192, 199);
+    font-size: 50px;
+    font-family:sans-serif;
+}
+.details p {
+    font-size: 1rem;
+    width: 50vw;
+    margin-top: 3vh;
+    justify-content: start;
+    text-align: justify;
+    line-height: 3.5vh;
+}
+.details button {
+    color: azure;
+    background: orange ;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 5vh;
+    box-shadow: 0px 0px 8px 5px rgb(143, 107, 49);
+    letter-spacing: 0.1vw;
+    transition: transform 0.5s ,background-color 0.5s, box-shadow 0.5s ;
+}
+#reservation:hover {
+    background-color: rgb(27, 201, 27);
+    box-shadow: 0px 0px 8px 5px green;
+    transform: scale(1.10);
+}
+.services {
+    display: flex;
+    gap: 5vw;
+    height: 40vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vw;
+    background:linear-gradient( to right , crimson , royalblue);
+}
+.fast-delivery {
+    display: inline-block;
+    height: 30vh;
+    width: 25vw;
+    background: red;
+    border-radius: 20px;
+    transition: transform 0.5s;
+
+}
+.services p {
+    padding: 1.5vw;
+    font-size: 1rem;
+    text-align: justify;
+    display: flex;
+}
+.fast-delivery:hover {
+    transform: scale(1.08);
+}
+.quick-takeout {
+    height: 30vh;
+    width: 25vw;
+    background: green;
+    border-radius: 20px;
+    transition: transform 0.5s;
+}
+.quick-takeout:hover {
+    transform: scale(1.08);
+}
+.meal-deals {
+    height: 30vh;
+    width: 25vw;
+    background: blue;
+    border-radius: 20px;
+    transition: transform 0.5s;
+
+}
+.meal-deals:hover {
+    transform: scale(1.08);
+}
+.latenightservices {
+    height: 30vh;
+    width: 25vw;
+    border-radius: 20px;
+    background:orange;
+    transition: transform 0.5s;
+}
+.latenightservices:hover {
+    transform: scale(1.08);
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    height:15vh;
+    width: 100vw;
+    background: burlywood;
+}
+.services img {
+    display: flex;
+    height: 15vh;
+    width: 7vw;
+    justify-self: center;
+    margin-top: 2vh;
+    border-radius: 20px;
+}
+h4 {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background-color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.menu {
+    display: flex;
+    height: 110vh;
+    width: 100vw;
+    background-color:#777C6D;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+.menu img {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(58, 55, 55);
+
+}
+.menu p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: rgba(12, 0, 0, 0.863);
+}
+.dishes {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 50px;
+    background:#B7B89F;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 2px rgb(43, 38, 38);
+    transition: transform 0.3s;
+}
+.dishes:hover{
+    transform: scale(1.05);
+}
+.menu a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 800;
+}
+footer {
+    height: 35vh;
+    width: 100vw;
+    background-color: #393E46;
+    color: white;
+}
+ul {
+    list-style: none;
+    
+}
+.foot-content a {
+    color: white;
+    text-decoration: none;
+}
+.move:hover {
+    transform: translateX(20px);
+}
+.foot-content li {
+    margin-top: 5%;
+    transition: transform 0.3s;
+}
+.icons {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.foot-content p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+.foot-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+}
