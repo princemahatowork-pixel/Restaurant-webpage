@@ -15,7 +15,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
     padding: 0vh 4vw;
 }
 .restaurant-logo img{
@@ -35,6 +34,7 @@ body {
     transition: transform 0.3s;
 }
 .content a:hover {
+    color: royalblue;
     transform: scale(1.4);
 }
 .hero-image img {
@@ -161,14 +161,13 @@ h4 {
 }
 .menu {
     display: flex;
-    height: 110vh;
     width: 100vw;
-    background-color:#777C6D;
     flex-wrap: wrap;
+    min-height: 100vh;
+    background-color:#777C6D;
     flex-shrink: 0;
     justify-content: space-evenly;
-    padding: 3vw;
-    overflow: scroll;
+    padding: 2vw;
 }
 .menu img {
     height: 100px;
@@ -184,17 +183,19 @@ h4 {
 
 }
 .menu p {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
     color: rgba(12, 0, 0, 0.863);
 }
 .dishes {
+    display: grid;
     height: 200px;
     width: 200px;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 5vw;
+    margin-bottom: 15px;
     background:#B7B89F;
     border: none;
     border-radius: 10px;
